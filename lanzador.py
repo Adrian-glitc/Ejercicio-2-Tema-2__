@@ -1,17 +1,4 @@
-class Texto:
-    @staticmethod
-    def arreglar_texto(texto):
-        '''Recibe un texto y lo formatea para que tenga el primer caracter 
-        en mayúscula y añade puntos y saltos de línea.'''
-
-        partes = texto.split('#')
-        
-        texto_formateado = partes[0].capitalize() + "..."
-        
-        for parte in partes[1:]:
-            texto_formateado += "\n" + parte.strip().capitalize() + "."
-        
-        return texto_formateado
+from Texto import Texto
 
 def main():
     texto_original = ("un día que el viento soplaba con fuerza#mira como se mueve aquella banderola -dijo un monje#"
